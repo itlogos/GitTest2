@@ -1,5 +1,6 @@
 package com.lviv;
 
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class Main {
@@ -8,9 +9,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Vvedy text:");
         String text = scanner.nextLine();
-        StringBuilder str = new StringBuilder();
-        str.append(text);
-        str = str.reverse();
-        System.out.println(str);
+        char symbols[] = text.toCharArray();
+        for (int x = symbols.length - 1; x >= 0; x--) {
+            System.out.print(symbols[x]);
+
+        }
     }
 }
