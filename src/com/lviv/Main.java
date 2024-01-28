@@ -12,7 +12,7 @@ public class Main {
         char symbols[] = text.toCharArray();
         for (int x = symbols.length - 1; x >= 0; x--) {
             System.out.print(symbols[x]);
-
+// proba
         }
     }
 }
